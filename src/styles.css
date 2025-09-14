@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Estilos base globales opcionales */
+:root {
+    --bg-classic: #0f172a; /* slate-900 */
+    --bg-neon: #0a0a0a; /* near-black */
+}
+
+
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+}

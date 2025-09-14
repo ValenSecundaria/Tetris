@@ -1,0 +1,41 @@
+{
+  "name": "tetris-angular",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "server": "nodemon server/index.js",
+    "dev": "concurrently \"ng serve --proxy-config proxy.conf.json\" \"nodemon server/index.js\""
+  },
+  "dependencies": {
+    "@angular/animations": "^20.3.0",
+    "@angular/common": "^20.3.0",
+    "@angular/compiler": "^20.3.0",
+    "@angular/core": "^20.3.0",
+    "@angular/forms": "^20.3.0",
+    "@angular/platform-browser": "^20.3.0",
+    "@angular/platform-browser-dynamic": "^20.3.0",
+    "@angular/router": "^20.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "howler": "^2.2.4",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.6.2",
+    "zone.js": "^0.15.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^20.3.0",
+    "@angular/cli": "^20.3.0",
+    "@angular/compiler-cli": "^20.3.0",
+    "@types/express": "^4.17.21",
+    "autoprefixer": "^10.4.15",
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.1.0",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.9.2"
+  }
+}
