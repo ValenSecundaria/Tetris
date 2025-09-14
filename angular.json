@@ -51,21 +51,20 @@
           "defaultConfiguration": "development"
         },
         "serve": {
-            "builder": "@angular-devkit/build-angular:dev-server",
-            "options": {
-                "buildTarget": "tetris-angular:build",
-                "proxyConfig": "proxy.conf.json"
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "tetris-angular:build"
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "tetris-angular:build:production"
             },
-            "configurations": {
-                "production": {
-                "buildTarget": "tetris-angular:build:production"
-                },
-                "development": {
-                "buildTarget": "tetris-angular:build:development"
-                }
-            },
-            "defaultConfiguration": "development"
-            },
+            "development": {
+              "buildTarget": "tetris-angular:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
